@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 
+import AppNavBar from "@/components/app-navbar";
 import Providers from "@/components/providers";
 
 import "./globals.css";
@@ -15,7 +16,7 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en">
+		<html lang="en" suppressHydrationWarning>
 			<head>
 				<link
 					rel="icon"
@@ -23,7 +24,10 @@ export default function RootLayout({
 				/>
 			</head>
 			<body>
-				<Providers>{children}</Providers>
+				<Providers>
+					<AppNavBar />
+					{children}
+				</Providers>
 			</body>
 		</html>
 	);

@@ -12,6 +12,7 @@
 		"**/app/**/page.tsx": "${dirname} - Page",
 		"**/app/**/layout.tsx": "${dirname} - Layout",
 		"**/component/**/index.tsx": "${dirname} - Component",
-		"**/components/**": "${filename} - Component"
+		"**/components/**": "${filename} - Componenst",
+		"**/hooks/**": "${filename} - Hooks"
 	}
 }
