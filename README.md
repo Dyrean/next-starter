@@ -82,6 +82,7 @@ This project uses various environment variables for configuration. Make sure to 
 
 ## 📁 Project Structure
 
+```
 .
 ├── src/
 │   ├── app/                 # Next.js 13+ app directory
@@ -99,6 +100,7 @@ This project uses various environment variables for configuration. Make sure to 
 ├── next.config.mjs          # Next.js configuration
 ├── tailwind.config.ts       # Tailwind CSS configuration
 └── tsconfig.json            # TypeScript configuration
+```
 
 ## 🔒 Authentication
 
