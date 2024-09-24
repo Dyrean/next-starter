@@ -126,12 +126,6 @@ GOOGLE_CLIENT_SECRET="your-google-client-secret"
 
 This project uses Tailwind CSS for styling. The main configuration can be found in: `tailwind.config.ts`
 
-```typescript
-// tailwind.config.ts
-// Tailwind CSS configuration
-// Customize theme, plugins, etc.
-```
-
 NextUI components are also integrated for a cohesive design system.
 
 ## 📊 Database
