@@ -22,7 +22,7 @@
 			"error",
 			{
 				// all folders within src (except __tests__)should be named in kebab-case
-				"src/**": "KEBAB_CASE"
+				"src/**/!^[.*": "KEBAB_CASE"
 			}
 		]
 	},
