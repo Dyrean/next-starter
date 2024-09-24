@@ -31,10 +31,17 @@ export default function AppNavBar() {
 	];
 
 	if (status === "authenticated") {
-		menuItems.push({
-			label: "Profile",
-			href: "/profile",
-		});
+		const protectedMenuItems = [
+			{
+				label: "Profile",
+				href: "/profile",
+			},
+			{
+				label: "Guestbook",
+				href: "/guestbook",
+			},
+		];
+		menuItems.push(...protectedMenuItems);
 	}
 
 	return (
