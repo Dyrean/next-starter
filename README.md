@@ -78,14 +78,10 @@ Visit `http://localhost:3000` to see your application running.
 
 ### Environment Variables
 
-This project uses various environment variables for configuration. Make sure to set them up correctly in your `.env.local` file. You can find the required variables and their descriptions in the `src/env/server.ts` file.
+This project uses various environment variables for configuration. Make sure to set them up correctly in your `.env` file. You can find the required variables and their descriptions in the `src/env/server.ts` file.
 
 ## 📁 Project Structure
 
-<details>
-<summary>Click to expand</summary>
-
-```
 .
 ├── src/
 │   ├── app/                 # Next.js 13+ app directory
@@ -96,14 +92,13 @@ This project uses various environment variables for configuration. Make sure to 
 │   ├── types/               # TypeScript type definitions
 │   └── utils/               # Utility functions
 ├── public/                  # Static assets
-├── .env.example # Example environment variables
-├── docker-compose.yml # Docker Compose configuration
-├── next.config.mjs # Next.js configuration
-├── tailwind.config.ts # Tailwind CSS configuration
-└── tsconfig.json # TypeScript configuration
-```
-
-</details>
+├── .env                     # Environment variables
+├── eslintrc.json            # ESLint configuration
+├── pritierrc.json           # Prettier configuration
+├── docker-compose.yml       # Docker Compose configuration
+├── next.config.mjs          # Next.js configuration
+├── tailwind.config.ts       # Tailwind CSS configuration
+└── tsconfig.json            # TypeScript configuration
 
 ## 🔒 Authentication
 
