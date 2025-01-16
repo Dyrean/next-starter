@@ -8,7 +8,7 @@ import {
 	DropdownItem,
 	DropdownMenu,
 	DropdownTrigger,
-} from "@nextui-org/react";
+} from "@heroui/react";
 import { IconBrandGoogle, IconUser } from "@tabler/icons-react";
 import { signIn, signOut, useSession } from "next-auth/react";
 
@@ -16,14 +16,14 @@ export default function AuthButton({ minimal = true }: { minimal?: boolean }) {
 	const { data, status } = useSession();
 
 	if (status === "loading") {
-		return <CircularProgress />;
+		return <CircularProgress aria-label="Loading authentication status" />;
 	}
 
 	if (status === "authenticated") {
 		const signOutClick = () => signOut({ callbackUrl: "/" });
 		if (minimal) {
 			return (
-				<Button onClick={signOutClick} color="danger" variant="ghost">
+				<Button onPress={signOutClick} color="danger" variant="ghost">
 					<IconBrandGoogle />
 					Sign out
 				</Button>
@@ -50,7 +50,7 @@ export default function AuthButton({ minimal = true }: { minimal?: boolean }) {
 					<DropdownItem
 						key="sign-out"
 						color="danger"
-						onClick={() => signOut({ callbackUrl: "/" })}
+						onPress={() => signOut({ callbackUrl: "/" })}
 					>
 						Sign Out
 					</DropdownItem>
@@ -61,7 +61,7 @@ export default function AuthButton({ minimal = true }: { minimal?: boolean }) {
 
 	return (
 		<Button
-			onClick={() =>
+			onPress={() =>
 				signIn("google", {
 					callbackUrl: "/profile",
 				})

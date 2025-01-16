@@ -4,7 +4,7 @@ import { Suspense } from "react";
 import AppNavBar from "@/components/app-navbar";
 import Providers from "@/components/providers";
 
-import "./globals.css";
+import "@/styles/globals.css";
 
 export const metadata: Metadata = {
 	title: "Next.js Starter App",

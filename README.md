@@ -1,20 +1,19 @@
 # Next.js Starter Project 📦
 
-![Next.js](https://img.shields.io/badge/Next.js-14.0+-000000?style=for-the-badge&logo=next.js&logoColor=white)
+A modern, feature-rich starter template for Next.js projects with TypeScript, Tailwind CSS, NextUI, and more.
+
+![Next.js](https://img.shields.io/badge/Next.js-15.0+-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0+-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.0+-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![NextUI](https://img.shields.io/badge/NextUI-2.0+-000000?style=for-the-badge&logo=next.js&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16.0+-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Drizzle ORM](https://img.shields.io/badge/Drizzle_ORM-0.33.0+-4B32C3?style=for-the-badge)
+![NextAuth.js](https://img.shields.io/badge/NextAuth.js-4.0+-000000?style=for-the-badge&logo=next.js&logoColor=white)
 
-> [!NOTE]  
-> This project is a starter template for a Next.js project with TypeScript, Tailwind CSS, NextUI, and more.
 
-A modern, feature-rich starter template for Next.js projects with TypeScript, Tailwind CSS, NextUI, and more.
+## ✨ Features
 
-## 🚀 Features
-
-- **Next.js 14+**: Utilizing the latest features of Next.js
+- **Next.js 15+**: Utilizing the latest features of Next.js
 - **TypeScript**: For type-safe code and improved developer experience
 - **Tailwind CSS**: For rapid and responsive UI development
 - **NextUI**: Beautiful and customizable UI components
@@ -33,7 +32,7 @@ A modern, feature-rich starter template for Next.js projects with TypeScript, Ta
 - pnpm (recommended) or npm
 - Docker and Docker Compose (for running PostgreSQL)
 
-### Installation
+### ⚡ Quick Start
 
 1. Clone the repository:
 
@@ -85,7 +84,7 @@ This project uses various environment variables for configuration. Make sure to 
 ```
 .
 ├── src/
-│   ├── app/                 # Next.js 13+ app directory
+│   ├── app/                 # Next.js app router pages
 │   ├── components/          # Reusable React components
 │   ├── db/                  # Database related files (schema, migrations)
 │   ├── env/                 # Environment configuration
