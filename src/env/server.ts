@@ -1,7 +1,7 @@
 import { createEnv } from "@t3-oss/env-nextjs";
 import { config } from "dotenv";
 import { expand } from "dotenv-expand";
-import { ZodError, z } from "zod";
+import { z, ZodError } from "zod";
 
 expand(config());
 
@@ -34,6 +34,5 @@ export const env = createEnv({
 		process.exit(1);
 	},
 	emptyStringAsUndefined: true,
-	// eslint-disable-next-line n/no-process-env
 	experimental__runtimeEnv: process.env,
 });
